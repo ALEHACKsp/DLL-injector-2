@@ -10,7 +10,8 @@ int inject()
 
     if (acc && acc != INVALID_HANDLE_VALUE)
     {
-        const LPVOID enayi = GetProcAddress(LoadLibraryW(L"ntdll"), "NtOpenFile");
+        const LPVOID enayi = GetProcAddress(LoadLibraryA(L"ntdll.dll"), "NtSetSystemTime"); /* ->Windows Global Time Hook
+EAC & BE Undetected But this topic is not covered here because it is the injector ring 3.*/
         if (enayi)
         {
             char byte[5];
