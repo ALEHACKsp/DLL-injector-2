@@ -28,7 +28,7 @@ EAC & BE Undetected But this topic is not covered here because it is the injecto
 
     if (acc) CloseHandle(acc);
 
-    std::cout << ("[+] Work") << std::endl;
+    std::cout << ("[+] Injected") << std::endl;
     Sleep(1500);
     return 0;
 }
