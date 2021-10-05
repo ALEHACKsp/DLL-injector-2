@@ -5,7 +5,7 @@ int main() {
     DWORD test = find_process("notepad.exe");
     if (!test)
     {
-        cout << "Destination not found";
+        cout << "notepad not found";
         cin.get();
     }
     else {
